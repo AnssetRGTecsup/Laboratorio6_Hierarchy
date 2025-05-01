@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class LookAtObject : MonoBehaviour
 {
-    public GameObject Sol; // arrástralo desde el inspector
+    public GameObject Sol;
 
     void Update()
     {
