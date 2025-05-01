@@ -119,6 +119,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &55583223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 55583224}
+  - component: {fileID: 55583225}
+  m_Layer: 0
+  m_Name: Satelite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &55583224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55583223}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.055292998, y: -0.763409, z: -0.06593873, w: -0.64015746}
+  m_LocalPosition: {x: 6.21, y: 0, z: 1.22}
+  m_LocalScale: {x: 0.40000015, y: 0.40000013, z: 0.40000015}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 2005943914}
+  m_Father: {fileID: 992239382}
+  m_LocalEulerAnglesHint: {x: -9.873, y: -259.963, z: 0}
+--- !u!114 &55583225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55583223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f4fef54a0a1874488e228b50b881e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetivo: {fileID: 1544654050}
 --- !u!1001 &150595585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -149,7 +195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 41f08c35745be45418cd81746e1fea81, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.552003
+      value: 11.61
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 41f08c35745be45418cd81746e1fea81, type: 3}
       propertyPath: m_LocalPosition.y
@@ -157,7 +203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 41f08c35745be45418cd81746e1fea81, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.3
+      value: 5.74
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 41f08c35745be45418cd81746e1fea81, type: 3}
       propertyPath: m_LocalRotation.w
@@ -537,7 +583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anglesVariations: {x: 0, y: 0, z: 0}
-  velocityModifier: {x: 0, y: 10, z: 0}
+  velocityModifier: {x: 0, y: 20, z: 0}
 --- !u!1 &1087028607
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,7 +1020,6 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 992239382}
-  - {fileID: 2005943914}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1544654051
@@ -1069,6 +1114,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 400000, guid: ee6535f71428504449546c25c0673573, type: 3}
       insertIndex: -1
       addedObject: {fileID: 591009923}
+    - targetCorrespondingSourceObject: {fileID: 400000, guid: ee6535f71428504449546c25c0673573, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 55583224}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ee6535f71428504449546c25c0673573, type: 3}
       insertIndex: -1
@@ -1332,14 +1380,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005943913}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5119125, y: -0.50034326, z: -0.4948434, w: -0.4926787}
-  m_LocalPosition: {x: -1.3969, y: 0.0589, z: 0.0075}
-  m_LocalScale: {x: 0.012175202, y: 0.03119601, z: 0.014770402}
+  m_LocalRotation: {x: 0.14292562, y: -0.7427612, z: -0.6447388, w: -0.110408634}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.60876, y: 1.5598, z: 0.73852}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1968021167}
-  m_Father: {fileID: 1544654050}
-  m_LocalEulerAnglesHint: {x: -91.621, y: 28.772995, z: -299.312}
+  m_Father: {fileID: 55583224}
+  m_LocalEulerAnglesHint: {x: -98.376, y: 8.005005, z: -208.7}
 --- !u!136 &2005943915
 CapsuleCollider:
   m_ObjectHideFlags: 0
