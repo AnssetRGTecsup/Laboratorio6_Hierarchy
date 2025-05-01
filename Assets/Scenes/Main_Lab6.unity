@@ -478,9 +478,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 863784969}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.068886146, z: -0, w: -0.9976246}
+  m_LocalRotation: {x: -0, y: 0.068886146, z: -0, w: -0.9976246}
   m_LocalPosition: {x: -17.7, y: -1.63, z: 0.5}
-  m_LocalScale: {x: 0.5, y: 0.8, z: 0.79999995}
+  m_LocalScale: {x: 0.5, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 55583224}
@@ -1306,7 +1306,7 @@ MonoBehaviour:
   earthRotationSpeed: 30
   moonOrbitSpeed: 50
   moonRotationSpeed: 50
-  satelliteOrbitSpeed: 100
+  satelliteOrbitSpeed: 30
 --- !u!4 &1838137818
 Transform:
   m_ObjectHideFlags: 0
