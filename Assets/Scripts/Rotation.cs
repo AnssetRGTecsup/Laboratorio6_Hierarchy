@@ -1,10 +1,12 @@
 using UnityEngine;
 
 [ExecuteInEditMode]
-public class Transform : MonoBehaviour
+public class Rotation : MonoBehaviour
 {
     public Vector3 result;
-    public float rotation;
+    public float rotationSpeed = 45f; 
+    private float currentRotation = 0f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,13 +16,12 @@ public class Transform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        currentRotation += rotationSpeed * Time.deltaTime;
+
+        transform.rotation = Quaternion.Euler(0, currentRotation, 0);
+
         result = Vector3.forward * 5;
-        result = Quaternion.Euler(0, rotation, 0) * result;
+        result = transform.rotation * result;
     }
 
-    public void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawLine(this.transform.position, this.transform.position + result);
-    }
 }
