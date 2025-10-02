@@ -128,6 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 55583224}
+  - component: {fileID: 55583225}
   m_Layer: 0
   m_Name: Satelite
   m_TagString: Untagged
@@ -144,13 +145,27 @@ Transform:
   m_GameObject: {fileID: 55583223}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -58.01633, y: 0, z: 1.4083924}
-  m_LocalScale: {x: 0.5000001, y: 0.5, z: 0.5000001}
+  m_LocalPosition: {x: -2.3206532, y: 0, z: 0.056335695}
+  m_LocalScale: {x: 0.020000003, y: 0.02, z: 0.020000003}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2005943914}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1544654050}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &55583225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55583223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456211f6135d23a4fbc66f8bf898ad16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 20
+  rotationAxis: {x: 0, y: 2, z: 0}
 --- !u!1001 &150595585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -981,8 +996,9 @@ Transform:
   m_LocalScale: {x: 25, y: 25, z: 25}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 1604652387}
   - {fileID: 1968021167}
+  - {fileID: 1604652387}
+  - {fileID: 55583224}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1544654051
@@ -1256,7 +1272,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.57572985, y: 0.4105304, z: 0.57572985, w: 0.4105304}
   m_LocalPosition: {x: -2.30629, y: 0.004950602, z: 0.056335695}
-  m_LocalScale: {x: 0.040440746, y: 0.004009835, z: 0.014770399}
+  m_LocalScale: {x: 0.04044074, y: 0.004009835, z: 0.014770399}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 776094770}
@@ -1529,4 +1545,3 @@ SceneRoots:
   - {fileID: 1544654050}
   - {fileID: 1762175753}
   - {fileID: 1087028608}
-  - {fileID: 55583224}
